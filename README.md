@@ -1,6 +1,6 @@
 ﻿# tcc
 
 - [docs da documentação/apresentação](https://docs.google.com/document/d/1r-e428EUdj32zRIpQJ9FL70t9Ysa8twu0HKREmuDdMQ/edit?tab=t.0)
-- [roteiro do vídeo](https://docs.google.com/document/d/1bz-9x6lw57A3w-2Ni5CwBD3wgimpjRDg2NZukxo1kwA/edit?tab=t.0)
+- [roteiro do vídeo](https://docs.google.com/document/d/1lXaZi3yc_Ul45zSCeutvjl0T0Z-T4RZPRMS8slGGAMY/edit?tab=t.0)
 - [Forms](https://docs.google.com/forms/d/1WYLeDCSPyBOjSaROQuU4KKPLkrllRtBg8Izl0oKUW18/edit)
 - [Canva](https://www.canva.com/design/DAGewN8gTvY/ICaG1GKd6gY6w016A21p9g/edit?ui=eyJBIjp7IkkiOnsiQSI6eyJBIjoiRlU3MEdzWXM3IiwiQiI6eyJEX0tJcVBuUm8iOnsiQT8iOiJBIn0sIkRfS0FkWXhuTiI6eyJBPyI6IkIiLCJBIjoiRlU3elBZSHhFIn0sIkRfS004R2pBSyI6eyJBPyI6IkMiLCJBIjpbeyJBIjoiRlJPTlQiLCJCIjpbMV19LHsiQSI6IkJBQ0siLCJCIjpbMl19XX0sIkRfS0k4Wkh2MiI6eyJBPyI6IkUiLCJBIjoxMDB9LCJGU21RMnJ1T0ciOnsiQT8iOiJEIiwiQSI6IkZTbVdPVmF0WCJ9fSwiQyI6eyJwcm9kdWN0U2l6ZSI6InBvcnRyYWl0IiwicGFnZVNlbGVjdCI6IntcIkZST05UXCI6WzFdLFwiQkFDS1wiOlsyXX0iLCJxdWFudGl0eSI6IjEwMCIsInBhcGVyVHlwZSI6InN0YW5kYXJkIn19fX19)
