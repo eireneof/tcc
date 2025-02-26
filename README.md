@@ -2,7 +2,11 @@
 
 **Olá, Pessoa Desenvolvedora!** (ou interessada em desenvolvimento) 👋 
 
-Apresento o ** Guia de Integração de Acessibilidade Web para Equipes de Desenvolvimento**, uma proposta prática para integrar a acessibilidade em seus projetos desde o início! Este projeto nasceu a partir do meu Trabalho de Conclusão de Curso (TCC) e agora quero compartilhar com a comunidade tech, pois quero entender o nível de aceitação e aplicabilidade deste Guia. 🌍
+Apresento o **Guia de Integração de Acessibilidade Web para Equipes de Desenvolvimento**, uma proposta prática para integrar a acessibilidade em seus projetos desde o início! Este projeto nasceu a partir do meu Trabalho de Conclusão de Curso (TCC) e agora quero compartilhar com a comunidade tech, pois quero entender o nível de aceitação e aplicabilidade deste Guia. 🌍
+
+🎥 Vídeo demonstrativo:
+
+[![Vídeo demonstrativo da proposta](./assets/capa_video.png)](https://youtu.be/HARqAH7_zv4)
 
 **Qual o Propósito do Framework? 🤔**
 
@@ -14,7 +18,9 @@ Integrar a acessibilidade em **todas as etapas** do desenvolvimento web de manei
 *   **✅ Pull Requests:** Implementar um Checklist para garantir a acessibilidade em cada entrega de código.
 *   **📦 Publicação:** Automatizar verificações de acessibilidade no pipeline de CI/CD para entregas contínuas e acessíveis.
 
-![alt text](./docs/image-1.png)
+<!-- ![alt text](./docs/image-1.png) -->
+
+![Fluxograma do guia](./assets/fluxograma.png)
 
 **Sua Opinião é Valiosa!  💖**
 
@@ -25,7 +31,7 @@ Este Framework foi criado para **você**, desenvolvedor(a)!  Portanto, seu feedb
 *   Sugestões de melhorias e aprimoramentos 🔧
 *   Novas ideias e contribuições 🎁
 
-**👉 Clique AQUI para Acessar o Formulário de Feedback [FORMULÁRIO DE FEEDBACK](https://www.google.com/url?sa=E&source=gmail&q=LINK-PARA-O-SEU-FORMULARIO) 👈** *(Lembre-se de substituir `LINK-PARA-O-SEU-FORMULARIO` pelo link do seu formulário, ok? 😉)*
+**👉 Clique AQUI para Acessar o Formulário de Feedback [FORMULÁRIO DE FEEDBACK](https://forms.gle/U75FJSutNxZ2bwWG7) 👈**
 
 **Quem Desenvolveu? 🤓**
 
