@@ -1,5 +1,4 @@
-> 🚨 PROJETO EM DESENVOLVIMENTO!!! 🚨
- # 🚀 Guia de Integração de Acessibilidade Web para Equipes de Desenvolvimento: Construindo a Web para Todos ✨
+# 🚀 Guia de Integração de Acessibilidade Web para Equipes de Desenvolvimento: Construindo a Web para Todos ✨
 
 **Olá, Pessoa Desenvolvedora!** (ou interessada em desenvolvimento) 👋 
 
@@ -51,11 +50,9 @@ Proposta mais detalhada com o objetivo de abranger de interessados em desenvolvi
 
 ## Quem está por trás deste Guia? 🤓
 
-*   **Eirene Fireman:** Desenvolvedora Web, graduanda em Ciência da Computação pela UFAL e entusiasta da acessibilidade. [LinkedIn](https://www.google.com/url?sa=E&source=gmail&q=LINK-DO-LINKEDIN-DA-EIRENE) | [GitHub](https://www.google.com/url?sa=E&source=gmail&q=LINK-DO-GITHUB-DA-EIRENE) | [Email](https://www.google.com/url?sa=E&source=gmail&q=EMAIL-DA-EIRENE)
+*   **Eirene Fireman:** Desenvolvedora Web, graduanda em Ciência da Computação pela UFAL e entusiasta em acessibilidade web. [LinkedIn](https://www.google.com/url?sa=E&source=gmail&q=LINK-DO-LINKEDIN-DA-EIRENE) | [GitHub](https://www.google.com/url?sa=E&source=gmail&q=LINK-DO-GITHUB-DA-EIRENE) | [Email](https://www.google.com/url?sa=E&source=gmail&q=EMAIL-DA-EIRENE)
 *   **Professor Fábio Coutinho:** Docente da UFAL e orientador do projeto. [Currículo Lattes](https://www.google.com/url?sa=E&source=gmail&q=LINK-DO-LATTES-DO-FABIO)
-
-**Vamos construir juntos uma web mais acessível e inclusiva! 💪**
 
 ---
 
-✨ **A acessibilidade é um direito de todos. Seu feedback contribui para um futuro mais inclusivo!** ✨
+**Vamos construir juntos uma web mais acessível e inclusiva! 💪**
