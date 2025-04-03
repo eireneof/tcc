@@ -7,7 +7,7 @@ Este tutorial foi feito utilizando as seguintes configurações:
 - Editor de código: Visual Studio Code
 - Extensão [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens) não é obrigatória, apenas ajuda a visualizar melhor os erros do ESLint 
 
-Este tutorial irá guiá-lo na configuração do plugin `eslint-plugin-jsx-a11y` em seu projeto React que utiliza o arquivo de configuração `eslint.config.js`. Ele foi 100% baseado na [Documentação Oficial do eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y). 
+Os seguintes passos irão te guiar na configuração do plugin `eslint-plugin-jsx-a11y` em seu projeto React. Eles foram 100% baseados na [Documentação Oficial do eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y). 
 
 ## O que é o eslint-plugin-jsx-a11y?
 
