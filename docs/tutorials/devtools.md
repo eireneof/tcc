@@ -58,11 +58,11 @@ Com o relatório gerado, clique no menu de configurações (ícone de três pont
 📂 **Exemplo de relatório do Lighthouse:**  
 [Relatório de exemplo](../../assets/reports/github_lighthouse_docs%20_user_flows.html) ao auditar a página da documentação [User Flows in Lighthouse](https://github.com/GoogleChrome/lighthouse/blob/HEAD/docs/user-flows.md). Este relatório é um arquivo do tipo `.html`, então recomendo abri-lo em um navegador.  
 
-> **✨ Dica:** Você pode explorar o relatório de exemplo ou auditar uma página qualquer. **Lembre-se que é possível utilizar o Lighthouse em qualquer página renderizada pelo Chrome, então o céu é o limite!** 🚀  
+> **✨ Dica:** Você pode explorar o relatório de exemplo ou auditar uma página qualquer. **Lembre-se de que é possível utilizar o Lighthouse em qualquer página renderizada pelo Chrome, então o céu é o limite!** 🚀  
 
 ## 🌳 2. Analisar a Árvore de Acessibilidade
 
-Caso você tenha dúvidas, vale a pena dar uma lida nessa documentação: [A árvore de acessibilidade](https://web.dev/articles/the-accessibility-tree?hl=pt-br).  
+Caso você tenha dúvidas, vale a pena dar uma lida nesta documentação: [A árvore de acessibilidade](https://web.dev/articles/the-accessibility-tree?hl=pt-br).  
 
 ### **a) Abra o DevTools**  
 Na página que você deseja analisar, pressione **F12** ou clique com o botão direito e selecione **"Inspecionar"**.  
@@ -138,14 +138,13 @@ Ao inspecionar tanto os atributos ARIA quanto as propriedades computadas, você 
 
 ## 🎨 4. Encontrar Problemas de Contraste
 
- O Lighthouse já identifica problemas de contraste no relatório que geramos anteriormente, mas você pode inspecionar elementos específicos para obter mais detalhes. 
+O Lighthouse já identifica problemas de contraste no relatório que geramos anteriormente, mas você pode inspecionar elementos específicos para obter mais detalhes.  
 
+### **a) Abra o DevTools e selecione um elemento**  
+Se já não estiver aberto o DevTools, siga os passos do item 2 (a). Após aberto, selecione o elemento que você deseja analisar (por exemplo, um texto).  
 
-### **a) Abra o DevTools e selecione um elemento** 
-Se já não estiver aberto o Devtools, siga os passos do item 2 (a). Após aberto, selecione o elemento que você deseja analisar (por exemplo, um texto). 
-
-### **b) Acesse a aba "Visão geral de CSS"** 
-Clique  no ícone de três pontinhos. Então: **Mais ferramentas > Visão geral do CSS**.
+### **b) Acesse a aba "Visão geral de CSS"**  
+Clique no ícone de três pontinhos. Então: **Mais ferramentas > Visão geral do CSS**.  
 
 ![Captura de tela mostrando passos para chegar na aba "Visão geral de CSS"](../../assets/css_overview.png)
 
@@ -154,57 +153,56 @@ Clique  no ícone de três pontinhos. Então: **Mais ferramentas > Visão geral 
 ![Captura de tela mostrando o botão "Visão Geral da Captura" destacado no painel do DevTools](../../assets/visao_geral_da_captura.png)
 
 ### **d) Analise os resultados**  
-Essa funcionalidade fornece uma visão geral dos estilos e fontes utilizados na página. No entanto, como o foco deste tutorial é acessibilidade, vamos nos concentrar na seção **"Cores"** para identificar problemas de contraste e garantir que as combinações de cores atendam aos critérios de acessibilidade. 
+Essa funcionalidade fornece uma visão geral dos estilos e fontes utilizados na página. No entanto, como o foco deste tutorial é acessibilidade, vamos nos concentrar na seção **"Cores"** para identificar problemas de contraste e garantir que as combinações de cores atendam aos critérios de acessibilidade.  
 
 ![Visão geral do CSS mostrando análise de cores e fontes na página.](../../assets/visao_geral_da_captura.png)
 
-> **💡 Dica:** Explore as outras opções disponíveis para obter insights adicionais sobre o design da página.
+> **💡 Dica:** Explore as outras opções disponíveis para obter insights adicionais sobre o design da página.  
 
 ### **e) Em "Cores" encontre "Problemas de Contraste"**  
-A análise de contraste no CSS Overview verifica a legibilidade do texto segundo as WCAG. 
-    - **AA** é o nível mínimo aceitável para a maioria dos usuários com deficiência visual moderada. 
-    - **AAA** é um nível mais alto para usuários com deficiência visual severa.
+A análise de contraste no CSS Overview verifica a legibilidade do texto segundo as WCAG.  
+- **AA** é o nível mínimo aceitável para a maioria dos usuários com deficiência visual moderada.  
+- **AAA** é um nível mais alto para usuários com deficiência visual severa.  
 
 ![Exemplo de análise de contraste no CSS Overview, mostrando problemas de contraste identificados com base nos níveis de conformidade WCAG AA e AAA.](../../assets/problemas_contraste_css_overview.png)
 
-O **ideal** é que seu site passe com **AAA**, mas é **aceitável** passar com **AA**. Não cumprir nenhum dos dois é um problema e deve ser corrigido. 
+O **ideal** é que seu site passe com **AAA**, mas é **aceitável** passar com **AA**. Não cumprir nenhum dos dois é um problema e deve ser corrigido.  
 
-O DevTools é uma ferramenta extremamente robusta, oferecendo diversas maneiras de analisar questões de acessibilidade relacionadas a cores e contrastes que iriam bem além deste tutorial cujo o foco é ser mais generalista. 
+O DevTools é uma ferramenta extremamente robusta, oferecendo diversas maneiras de analisar questões de acessibilidade relacionadas a cores e contrastes que iriam bem além deste tutorial cujo o foco é ser mais generalista.  
 
-> 💡 Para explorar ainda mais essas funcionalidades, confira a documentação oficial do Chrome Developers: [Contraste e Legibilidade - Deixe seu site mais legível](https://developer.chrome.com/docs/devtools/accessibility/contrast?hl=pt-br).
+> 💡 Para explorar ainda mais essas funcionalidades, confira a documentação oficial do Chrome Developers: [Contraste e Legibilidade - Deixe seu site mais legível](https://developer.chrome.com/docs/devtools/accessibility/contrast?hl=pt-br).  
 
- ## 🔍 5. Acompanhando o Elemento em Foco no Chrome DevTools 
+## 🔍 5. Acompanhando o Elemento em Foco no Chrome DevTools  
 
-Muitas vezes quando queremos testar a navegação por teclado, ao navegar com a tecla `Tab`, o indicador de foco pode sumir, dificultando a identificação do elemento ativo. Porém o DevTools consegue nos ajudar com isto também.
+Muitas vezes, quando queremos testar a navegação por teclado, ao navegar com a tecla `Tab`, o indicador de foco pode sumir, dificultando a identificação do elemento ativo. Porém, o DevTools consegue nos ajudar com isto também.  
 
- ### **a) Abra o DevTools** Siga os passos do item 2 (a). 
+### **a) Abra o DevTools**  
+Siga os passos do item 2 (a).  
 
- ### **b) Acesse a aba "Console"** 
+### **b) Acesse a aba "Console"**  
 
- ### **c) Clique em "Criar expressão em tempo real" (Ícone de Olho :eye:)
+### **c) Clique em "Criar expressão em tempo real" (Ícone de Olho :eye:)**  
 
- ### d) Digite `document.activeElement` e dê enter
+### **d) Digite `document.activeElement` e dê enter**  
 
+### **e) Observe os elementos em foco**  
 
-
- ### **d) Observe os elementos em foco** 
- 
-Ao clicar nos elementos da sua página, ou navegar com eles por teclado, note que o elemento atual vai sendo destacado em tempo real.
+Ao clicar nos elementos da sua página, ou navegar com eles por teclado, note que o elemento atual vai sendo destacado em tempo real.  
 
 ![Gif mostrando o DevTools do Chrome destacando o elemento atualmente em foco enquanto o usuário navega pela página clicando e usando o teclado.](../../assets/acompanhando_foco.gif)
 
-Esse acompanhamento do elemento atual em foco é interessante para: 
+Esse acompanhamento do elemento atual em foco é interessante para:  
 
 - Garantir que a ordem em que os elementos recebem foco ao pressionar a tecla **Tab** segue um fluxo lógico e intuitivo dentro da página.  
-- Validar se o elemento em foco será destacado visualmente (por meio do anel de foco).
+- Validar se o elemento em foco será destacado visualmente (por meio do anel de foco).  
 
-Ao finalizar este tutorial, você terá adquirido o conhecimento fundamental para utilizar o Chrome DevTools como uma ferramenta poderosa na verificação da acessibilidade do seu site. Você será capaz de:
-- Gerar relatórios detalhados
-- Analisar a estrutura de acessibilidade
-- Inspecionar atributos ARIA, 
-- Verificar problemas de contraste de cores
-- Acompanhar a navegação por teclado. 
+Ao finalizar este tutorial, você terá adquirido o conhecimento fundamental para utilizar o Chrome DevTools como uma ferramenta poderosa na verificação da acessibilidade do seu site. Você será capaz de:  
+- Gerar relatórios detalhados  
+- Analisar a estrutura de acessibilidade  
+- Inspecionar atributos ARIA  
+- Verificar problemas de contraste de cores  
+- Acompanhar a navegação por teclado  
 
-Lembre-se que o DevTools oferece ainda muitas outras opções voltadas para o desenvolvimento com foco em acessibilidade. Para explorar todas as funcionalidades, a [documentação de Acessibilidade do Chrome for Developers](https://developer.chrome.com/docs/devtools/accessibility/reference?hl=pt-br)  em  é um recurso valioso e foi a base para a criação deste tutorial.
+Lembre-se de que o DevTools oferece ainda muitas outras opções voltadas para o desenvolvimento com foco em acessibilidade. Para explorar todas as funcionalidades, a [documentação de Acessibilidade do Chrome for Developers](https://developer.chrome.com/docs/devtools/accessibility/reference?hl=pt-br) é um recurso valioso e foi a base para a criação deste tutorial.  
 
-Caso este tutorial tenha te ajudado de alguma forma, **nos ajude a melhorar este projeto respondendo nosso [formulário de feedback](https://forms.gle/U75FJSutNxZ2bwWG7). 😄**
+Caso este tutorial tenha te ajudado de alguma forma, **nos ajude a melhorar este projeto respondendo ao nosso [formulário de feedback](https://forms.gle/U75FJSutNxZ2bwWG7). 😄**
