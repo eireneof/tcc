@@ -1,7 +1,7 @@
 # Tutorial: Usando a extensão WAVE para identificar problemas de acessibilidade 🌊
 
 Este tutorial foi elaborado utilizando as seguintes configurações:
-- **Navegador:** Chrome
+- 🌐 **Navegador:** Chrome
 
 A utilização do WAVE é relativamente simples, e este tutorial foi baseado na [documentação oficial disponível na página da extensão na Chrome Web Store](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=pt-PT&utm_source=ext_sidebar).
 
