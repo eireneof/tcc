@@ -5,12 +5,12 @@ Este tutorial foi elaborado utilizando as seguintes configurações:
 
 ## O que são os testes propostos neste tutorial?
 
-- **Navegação por Teclado:** Testar se é possível usar o site sem usar o mouse, apenas com o teclado.
-- **Compatibilidade com Leitores de Tela:** Testar se um programa especial chamado leitor de tela (usado por pessoas cegas ou com baixa visão) consegue entender e ler o conteúdo do seu site em voz alta.
-- **Inspeção Visual (Uso de cores, zoom e redimensionamento e entre outros):** Olhar para o site com atenção para identificar problemas de contraste, cores e fluidez do layout e entre outros.
-- **Acessibilidade de Multimídia:** Garantir que vídeos, áudios, imagens e animações no seu site sejam acessíveis para diferentes perfis de usuário.
+- **Navegação por Teclado:** Testar se é possível usar o site sem o mouse, apenas com o teclado.
+- **Compatibilidade com Leitores de Tela:** Testar se um programa especial chamado leitor de tela (usado por pessoas cegas ou com baixa visão) consegue entender e ler o conteúdo do site em voz alta.
+- **Inspeção Visual (Uso de cores, zoom e redimensionamento, entre outros):** Observar o site para identificar problemas de contraste, cores e fluidez do layout.
+- **Acessibilidade de Multimídia:** Garantir que vídeos, áudios, imagens e animações no site sejam acessíveis para diferentes perfis de usuários.
 
-Existem outros tipos de testes de acessibilidade que podem ser realizados para garantir uma cobertura ainda maior. No entanto, para o objetivo deste guia, que é ser simples e prático para desenvolvedores, focaremos nestes quatro tipos de testes. Eles já são suficientes para garantir um nível considerável de acessibilidade para sua entrega. Mas não se prenda a ele! ;)
+Existem outros tipos de testes de acessibilidade que podem ser realizados para garantir uma cobertura ainda maior. No entanto, para o objetivo deste guia, que é ser simples e prático para desenvolvedores, focaremos nestes quatro tipos de testes. Eles já são suficientes para garantir um nível considerável de acessibilidade para sua entrega. Mas não se prenda a eles! 😉
 
 ## Testando Navegação por Teclado
 
@@ -19,25 +19,23 @@ Existem outros tipos de testes de acessibilidade que podem ser realizados para g
 Pode parecer óbvio, mas para testar a navegação pelo teclado, é necessário conhecer os comandos básicos de navegação. Os principais comandos que você precisará usar são:
 
 - `Tab`: Avançar
-- `Shift` + `Tab`: Retorna
-- `Enter`: Ativa ou "clica" no elemento focado.
-
+- `Shift` + `Tab`: Retornar
+- `Enter`: Ativar ou "clicar" no elemento focado.
 
 ![Demonstração de navegação por teclado em um site, destacando o foco em elementos interativos como itens de menu e botões.](../../assets/teste_navegacao_teclado.gif)
-
 
 ### 2. Validando a navegação
 
 Agora que você está mais familiarizado com os comandos básicos descritos anteriormente, utilize a tabela abaixo para explorar as interações disponíveis. Durante a navegação, observe se o comportamento dos elementos está de acordo com o esperado e com as notas fornecidas.
 
 | Interação                        | Teclas                                                                 | Notas                                                                                                                                                                                                                                   |
-| :------------------------------- | :--------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|----------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Navegar para elementos interativos | `Tab` - navegar para frente <br> `Shift` + `Tab` - navegar para trás | Indicadores de foco do teclado devem estar presentes. <br> A ordem de navegação deve ser lógica e intuitiva.                                                                                                                              |
 | Link                             | `Enter` - ativar o link                                                |                                                                                                                                                                                                                                         |
-| Botão                            | `Enter` ou `Barra de espaço` - ativar o botão                          | Garanta que elementos com ARIA `role="button"` possam ser ativados com ambos os comandos de tecla.                                                                                                                                  |
-| Caixa de seleção (Checkbox)      | `Barra de espaço` - marcar/desmarcar uma caixa de seleção              | Usuários geralmente podem selecionar zero, uma ou múltiplas opções de um grupo de caixas de seleção.                                                                                                                                  |
-| Botões de opção (Radio buttons)  | `Barra de espaço` - selecionar a opção focada (se não selecionada) <br> `↑`/`↓` ou `←`/`→` - navegar entre opções <br> `Tab` - sair do grupo de botões de opção | Usuários podem selecionar apenas uma opção de um grupo de botões de opção.                                                                                                                                                           |
-| Menu suspenso (Select/Dropdown)  | `↑`/`↓` - navegar entre opções <br> `Barra de espaço` - expandir <br> `Enter`/`Esc` - selecionar opção e recolher | Você também pode filtrar ou pular para opções no menu ao digitar letras.                                                                                                                              |
+| Botão                            | `Enter` ou `Barra de espaço` - ativar o botão                          | Garanta que elementos com ARIA `role="button"` possam ser ativados com ambos os comandos de tecla.                                                                                                                                      |
+| Caixa de seleção (Checkbox)      | `Barra de espaço` - marcar/desmarcar uma caixa de seleção              | Usuários geralmente podem selecionar zero, uma ou múltiplas opções de um grupo de caixas de seleção.                                                                                                                                   |
+| Botões de opção (Radio buttons)  | `Barra de espaço` - selecionar a opção focada (se não selecionada) <br> `↑`/`↓` ou `←`/`→` - navegar entre opções <br> `Tab` - sair do grupo de botões de opção | Usuários podem selecionar apenas uma opção de um grupo de botões de opção.                                                                                                                                                             |
+| Menu suspenso (Select/Dropdown)  | `↑`/`↓` - navegar entre opções <br> `Barra de espaço` - expandir <br> `Enter`/`Esc` - selecionar opção e recolher | Você também pode filtrar ou pular para opções no menu ao digitar letras.                                                                                                                         |
 | Autocompletar                    | Digite para começar a filtrar <br> `↑`/`↓` - navegar para uma opção <br> `Enter` - selecionar uma opção |                                                                                                                                                                                                                                         |
 | Diálogo (Dialog)                 | `Esc` - fechar                                                         | Diálogos modais devem manter o foco do teclado. <br> Diálogos não modais devem fechar automaticamente quando perdem o foco. <br> Quando um diálogo fecha, o foco geralmente deve retornar ao elemento que abriu o diálogo.                 |
 | Controle deslizante (Slider)     | `↑`/`↓` ou `←`/`→` - aumentar ou diminuir o valor <br> `Home`/`End` - início ou fim | Para controles deslizantes de duas pontas (para definir um intervalo), `Tab`/`Shift` + `Tab` devem alternar entre cada ponta. <br> Em alguns controles deslizantes, `PageUp`/`PageDown` podem mover em incrementos maiores (ex.: 10%). |
@@ -57,4 +55,3 @@ Após testar a navegação simulando um usuário padrão, garanta que os seguint
 - ✅ **Ativação por Teclado:** Todos os elementos interativos podem ser ativados usando as teclas `Enter` ou `Espaço` (dependendo do elemento).
 - ✅ **Indicador de Foco:** Um indicador de foco claro e visível aparece em cada elemento interativo quando ele recebe o foco do teclado.
 - ✅ **Armadilhas de Teclado:** NÃO há "armadilhas de teclado" onde o foco fica preso em um elemento e não pode ser movido para fora usando o teclado.
-
