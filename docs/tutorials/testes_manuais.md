@@ -1,6 +1,6 @@
 # Tutorial: Prepare sua Entrega com Testes Manuais de Acessibilidade Web
 
-Este tutorial foi elaborado utilizando as seguintes configurações:
+Este tutorial foi elaborado utilizando a seguinte configuração:
 - 🌐 **Navegador:** Chrome
 
 ## O que são os testes propostos neste tutorial?
@@ -12,9 +12,11 @@ Este tutorial foi elaborado utilizando as seguintes configurações:
 
 Existem outros tipos de testes de acessibilidade que podem ser realizados para garantir uma cobertura ainda maior. No entanto, para o objetivo deste guia, que é ser simples e prático para desenvolvedores, focaremos nestes quatro tipos de testes. Eles já são suficientes para garantir um nível considerável de acessibilidade para sua entrega. Mas não se prenda a eles! 😉
 
+---
+
 ## Testando Navegação por Teclado
 
-- Documentação de referência: [WebAIM | Keyboard Accessibility](https://webaim.org/techniques/keyboard/)
+- **Documentação de referência:** [WebAIM | Keyboard Accessibility](https://webaim.org/techniques/keyboard/)
 
 ### 1. Relembrando alguns comandos
 
@@ -70,16 +72,17 @@ ARIA (Accessible Rich Internet Applications): Inspecione o uso de atributos ARIA
 Mensagens de Erro: Teste se as mensagens de erro em formulários são anunciadas pelos leitores de tela e são fáceis de entender.
 Links de Pular Conteúdo: Verifique se há links de "pular para o conteúdo principal" ou similares que permitam aos usuários de leitores de tela ignorar a navegação repetitiva. -->
 
-## Inspeção Visual:
+---
 
-> 📌 Em projetos pessoais ou autônomos temos maior liberdade de atuar na correção de problemas de layout. No entanto, em equipes onde decisões de layout não são de sua responsabilidade, comunique o problema de à pessoa apropriada. Mesmo que a solução não seja imediata, é importante que o problema seja registrado pela equipe ou empresa.
+## Inspeção Visual
+
+> 📌 Em projetos pessoais ou autônomos temos maior liberdade de atuar na correção de problemas de layout. No entanto, em equipes onde decisões de layout não são de sua responsabilidade, comunique o problema à pessoa apropriada. Mesmo que a solução não seja imediata, é importante que o problema seja registrado pela equipe ou empresa.
 
 ### A. Verifique o Contraste de Cores
 
 - **Documentação de referência:** [web.dev | Como testar o contraste de cores do design da Web](https://web.dev/articles/testing-web-design-color-contrast?hl=pt-br)
 
-
-Para garantir a acessibilidade, utilize o [Wave](./Wave.md) ou [DevTools](./devtools.md) conforme vimos anteriormente. Mas também, sinta-se livre para usar ferramenta de sua escolha para uma última verificação do contraste de cores antes da entrega do código.
+Para garantir a acessibilidade, utilize o [Wave](./Wave.md) ou [DevTools](./devtools.md) conforme vimos anteriormente. Mas também, sinta-se livre para usar a ferramenta de sua escolha para uma última verificação do contraste de cores antes da entrega do código.
 
 **Wave:**
 
@@ -103,22 +106,21 @@ _Fonte: [AcessGuide | Don't use color alone to convey information (colorblind)](
 
 - ✅ Verificar se a cor não é o único meio de transmitir informações importantes. Certifique-se de que há alternativas textuais ou visuais para usuários que não conseguem perceber cores.
 
-
 ### C. Verifique o Zoom e Redimensionamento da página
 
 Aqui você deve verificar se o conteúdo da página se ajusta corretamente ao aumentar o zoom, sem quebrar o layout ou exigir rolagem horizontal excessiva.
 
 **Como Testar?**
 
-* **Aumentar o Zoom:** Pressione e segure a tecla `Ctrl` (ou `Command` no Mac) e pressione a tecla `+` (sinal de mais) repetidamente até atingir o nível de zoom desejado (experimente 200% ou mais).
-* **Diminuir o Zoom:** Pressione e segure a tecla `Ctrl` (ou `Command` no Mac) e pressione a tecla `-` (sinal de menos).
-* **Voltar ao Zoom Padrão:** Pressione e segure a tecla `Ctrl` (ou `Command` no Mac) e pressione a tecla `0` (zero).
+- **Aumentar o Zoom:** Pressione e segure a tecla `Ctrl` (ou `Command` no Mac) e pressione a tecla `+` (sinal de mais) repetidamente até atingir o nível de zoom desejado (experimente 200% ou mais).
+- **Diminuir o Zoom:** Pressione e segure a tecla `Ctrl` (ou `Command` no Mac) e pressione a tecla `-` (sinal de menos).
+- **Voltar ao Zoom Padrão:** Pressione e segure a tecla `Ctrl` (ou `Command` no Mac) e pressione a tecla `0` (zero).
 
 > 💡 **Dica:** Teste em diferentes níveis de zoom (150%, 200%, 300%) para garantir que seu site funcione bem em diversas situações.
 
-* **Redimensionamento:** Redimensione a janela do navegador para diferentes tamanhos para garantir que o conteúdo seja responsivo e não seja cortado ou obscurecido.
+- **Redimensionamento:** Redimensione a janela do navegador para diferentes tamanhos para garantir que o conteúdo seja responsivo e não seja cortado ou obscurecido.
 
-> 💡 **Dica:** As devtools também oferecem uma maneira de simular diferentes tamanhos de layout. Se não souber como fazer, confirar o tutorial do chrome for developers: [Simular dispositivos móveis com o modo dispositivo](https://developer.chrome.com/docs/devtools/device-mode?hl=pt-br)
+> 💡 **Dica:** As DevTools também oferecem uma maneira de simular diferentes tamanhos de layout. Se não souber como fazer, confira o tutorial do Chrome for Developers: [Simular dispositivos móveis com o modo dispositivo](https://developer.chrome.com/docs/devtools/device-mode?hl=pt-br)
 
 ![Em duas capturas de tela, vemos que quando o tamanho da letra aumenta, o título se sobrepõe ao texto principal, que por sua vez se sobrepõe ao texto da barra lateral. Além disso, o texto da barra lateral é cortado na parte inferior.](../../assets/redimensionamento.png)
 
@@ -126,48 +128,51 @@ _Fonte: [W3C | Resize text](https://www.w3.org/WAI/test-evaluate/preliminary/#re
 
 **Objetivos:**
 
-* ✅ **Reflow de Conteúdo:** O texto e outros elementos da página devem se reorganizar para caber na tela sem que você precise rolar horizontalmente para ler o conteúdo principal.
-* ✅ **Legibilidade:** O texto deve permanecer legível mesmo com o zoom aumentado.
-* ✅ **Sem Quebras:** O layout geral da página não deve quebrar de forma significativa, tornando a navegação confusa.
+- ✅ **Reflow de Conteúdo:** O texto e outros elementos da página devem se reorganizar para caber na tela sem que você precise rolar horizontalmente para ler o conteúdo principal.
+- ✅ **Legibilidade:** O texto deve permanecer legível mesmo com o zoom aumentado.
+- ✅ **Sem Quebras:** O layout geral da página não deve quebrar de forma significativa, tornando a navegação confusa.
 
+---
 
-## Acessibilidade de Multimídia:
+## Acessibilidade de Multimídia
 
-### 5. Imagens
+### 1. Imagens
 
-- Texto Alternativo (Alt Text): Todas as imagens devem ter um texto alternativo que descreva seu conteúdo e função. Caso a imagem seja decorativa deixe o `alt` vazio (`alt=""`).
+- ✅ **Texto Alternativo (Alt Text):** Todas as imagens devem ter um texto alternativo que descreva seu conteúdo e função. Caso a imagem seja decorativa, deixe o `alt` vazio (`alt=""`).
+- ✅ **Imagens Complexas:** Para imagens complexas como gráficos e diagramas, considere fornecer uma descrição mais detalhada no texto adjacente ou através de um link para uma página com a descrição completa.
 
-- Imagens Complexas: Para imagens complexas como gráficos e diagramas, considere fornecer uma descrição mais detalhada no texto adjacente ou através de um link para uma página com a descrição completa.
+### 2. Vídeos
 
-### 1. Vídeos
+- ✅ **Legendas para Vídeos:** Verifique se todos os vídeos têm legendas sincronizadas para usuários surdos ou com deficiência auditiva.
+- ✅ **Audiodescrição para Vídeos:** Para vídeos onde o conteúdo visual é essencial para o entendimento, verifique se há audiodescrição disponível.
 
-- Legendas para Vídeos: Verifique se todos os vídeos têm legendas sincronizadas para usuários surdos ou com deficiência auditiva.
-- Audiodescrição para Vídeos: Para vídeos onde o conteúdo visual é essencial para o entendimento, verifique se há audiodescrição disponível.
+### 3. Áudios
 
-### 2. Áudios
+- ✅ **Transcrições para Áudios:** Certifique-se de que todos os conteúdos de áudio têm transcrições textuais disponíveis.
 
-- Transcrições para Áudios: Certifique-se de que todos os conteúdos de áudio têm transcrições textuais disponíveis.
+### 4. Animações
 
-### 3. Animações
+- ✅ **Conteúdo Piscando ou em Movimento:** Verifique se há elementos piscando ou em movimento rápido que possam causar convulsões em alguns usuários. Idealmente, esses elementos devem ser evitados ou ter mecanismos para pausar ou interromper a animação.
+- ✅ **GIFs ou Animações:** Caso haja GIFs ou animações, eles devem ter mecanismos para pausar ou interromper a animação.
 
-- Conteúdo Piscando ou em Movimento: Verifique se há elementos piscando ou em movimento rápido que possam causar convulsões em alguns usuários. Idealmente, esses elementos devem ser evitados ou ter mecanismos para pausar ou interromper a animação.
-- GIFs ou animações: Caso haja GIFs ou animações eles devem ter ter mecanismos para pausar ou interromper a animação.
+### 5. Controles
 
-### 4. Controles
-- Controles de Multimídia: Caso eesse mecanismo de pausar animações exista, certifique-se de que os controles de reprodução (play, pause, volume, etc.) são acessíveis via teclado e leitor de tela.
+- ✅ **Controles de Multimídia:** Certifique-se de que os controles de reprodução (play, pause, volume, etc.) são acessíveis via teclado e leitor de tela.
 
 ### 6. Links
 
-- **Texto Descritivo:** O texto do link deve ser claro e indicar o destino do link. Evite frases genéricas como "Clique aqui".
-- **Distinção Visual:** Os links devem ser visualmente distintos do texto ao redor (por exemplo, através de cor e/ou sublinhado).
-- **Atributo `title` (Opcional, mas útil):** Considere adicionar um atributo `title` aos links para fornecer informações adicionais sobre o destino, especialmente se o texto do link for breve.
-- **Foco Visível:** Ao navegar com o teclado, deve haver um indicador visual claro de qual link está selecionado.
+- ✅ **Texto Descritivo:** O texto do link deve ser claro e indicar o destino do link. Evite frases genéricas como "Clique aqui".
+- ✅ **Distinção Visual:** Os links devem ser visualmente distintos do texto ao redor (por exemplo, através de cor e/ou sublinhado).
+- ✅ **Atributo `title` (Opcional, mas útil):** Considere adicionar um atributo `title` aos links para fornecer informações adicionais sobre o destino, especialmente se o texto do link for breve.
+- ✅ **Foco Visível:** Ao navegar com o teclado, deve haver um indicador visual claro de qual link está selecionado.
 
 ### 7. Ícones
 
-- **Ícones com Significado:** Se um ícone é usado para transmitir informações importantes, ele deve ter um texto alternativo que descreva seu significado. Alternativamente, o significado do ícone pode ser explicitado em texto adjacente.
-- **Ícones Decorativos:** Ícones puramente decorativos podem ter um texto alternativo vazio (`alt=""`).
-- **Contraste:** Certifique-se de que o contraste de cores dos ícones seja suficiente para que sejam facilmente visíveis.
+- ✅ **Ícones com Significado:** Se um ícone é usado para transmitir informações importantes, ele deve ter um texto alternativo que descreva seu significado. Alternativamente, o significado do ícone pode ser explicitado em texto adjacente.
+- ✅ **Ícones Decorativos:** Ícones puramente decorativos podem ter um texto alternativo vazio (`alt=""`).
+- ✅ **Contraste:** Certifique-se de que o contraste de cores dos ícones seja suficiente para que sejam facilmente visíveis.
+
+---
 
 Parabéns por ter chegado até o fim deste tutorial. Estes testes manuais são projetados para serem **simples e rápidos**, permitindo que você, como **desenvolvedor**, faça uma verificação inicial antes de cada entrega. 
 
@@ -175,8 +180,8 @@ Embora existam outros aspectos importantes da acessibilidade, os testes menciona
 
 Caso este tutorial tenha te ajudado de alguma forma, **nos ajude a melhorar este projeto respondendo ao nosso [formulário de feedback](https://forms.gle/U75FJSutNxZ2bwWG7). 😄**
 
-<hr>
+---
 
 ### Material de apoio e Referência
 
-[W3C | Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/)
+- [W3C | Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/)
