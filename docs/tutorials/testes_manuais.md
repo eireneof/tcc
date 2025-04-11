@@ -221,6 +221,8 @@ Siga estes passos para uma primeira verificação com o NVDA:
         | Ler linha atual                    | `NVDA + Seta para cima` | Lê a linha atual. Pressionar duas vezes soletra a linha. Pressionar três vezes soletra a linha usando descrições de caracteres (Alfa, Bravo, Charlie, etc.). |
         | Ler seleção                        | `NVDA + Shift + Seta para cima` | Lê qualquer texto selecionado. Pressionar duas vezes soletra a informação. Pressionar três vezes soletra usando descrição de caracteres. |
 
+        <!-- TODO: colocar vídeo de exemplo usando leitor de tela -->
+
 5.  **Verifique os seguintes pontos enquanto o NVDA lê a página:**
 
     - ✅ **Conteúdo Significativo:** Todo o texto importante da página está sendo lido? A ordem em que o conteúdo é lido faz sentido?
