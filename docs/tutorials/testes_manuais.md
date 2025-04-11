@@ -2,6 +2,7 @@
 
 Este tutorial foi elaborado utilizando a seguinte configuração:
 - 🌐 **Navegador:** Chrome
+- 🖥️ **Sistema Operacional:** Windows
 
 ## O que são os testes propostos neste tutorial?
 
@@ -59,20 +60,6 @@ Após testar a navegação simulando um usuário padrão, garanta que os seguint
 - ✅ **Ativação por Teclado:** Todos os elementos interativos podem ser ativados usando as teclas `Enter` ou `Espaço` (dependendo do elemento).
 - ✅ **Indicador de Foco:** Um indicador de foco claro e visível aparece em cada elemento interativo quando ele recebe o foco do teclado.
 - ✅ **Armadilhas de Teclado:** NÃO há "armadilhas de teclado" onde o foco fica preso em um elemento e não pode ser movido para fora usando o teclado.
-
-
-<!-- ### Compatibilidade com Leitores de Tela:
-
-Teste com um Leitor de Tela: Use um leitor de tela (como NVDA, VoiceOver ou TalkBack) para navegar pela página.
-Conteúdo Significativo: Verifique se todo o conteúdo significativo da página é lido pelo leitor de tela em uma ordem lógica.
-Texto Alternativo para Imagens: Certifique-se de que todas as imagens não textuais possuem texto alternativo (alt) descritivo e informativo.
-Rótulos de Formulário: Verifique se todos os campos de formulário têm rótulos (label) associados corretamente e que são lidos pelo leitor de tela.
-Tabelas de Dados: Certifique-se de que as tabelas de dados são marcadas semanticamente com <th> para cabeçalhos de coluna e linha, permitindo que os leitores de tela anunciem as associações de dados corretamente.
-ARIA (Accessible Rich Internet Applications): Inspecione o uso de atributos ARIA para melhorar a acessibilidade de conteúdo dinâmico e widgets complexos. Verifique se eles são usados corretamente para fornecer informações adicionais aos leitores de tela.
-Mensagens de Erro: Teste se as mensagens de erro em formulários são anunciadas pelos leitores de tela e são fáceis de entender.
-Links de Pular Conteúdo: Verifique se há links de "pular para o conteúdo principal" ou similares que permitam aos usuários de leitores de tela ignorar a navegação repetitiva. -->
-
----
 
 ## Inspeção Visual
 
@@ -171,6 +158,91 @@ _Fonte: [W3C | Resize text](https://www.w3.org/WAI/test-evaluate/preliminary/#re
 - ✅ **Ícones com Significado:** Se um ícone é usado para transmitir informações importantes, ele deve ter um texto alternativo que descreva seu significado. Alternativamente, o significado do ícone pode ser explicitado em texto adjacente.
 - ✅ **Ícones Decorativos:** Ícones puramente decorativos podem ter um texto alternativo vazio (`alt=""`).
 - ✅ **Contraste:** Certifique-se de que o contraste de cores dos ícones seja suficiente para que sejam facilmente visíveis.
+
+---
+
+## Compatibilidade com Leitores de Tela
+
+**Documentações de Apoio:**
+
+* [WebAIM | Testing with Screen Readers](https://webaim.org/articles/screenreader_testing/)
+* [WebAIM | Using NVDA to Evaluate Web Accessibility](https://webaim.org/articles/nvda/)
+* [NVDA 2024.4.2 User Guide](https://download.nvaccess.org/documentation/userGuide.html)
+
+Chegamos à etapa final, mas não menos importante: **testar a compatibilidade da sua página com leitores de tela**. Sabemos que essa etapa pode parecer diferente das outras, que envolvem ferramentas mais comuns no dia a dia do desenvolvimento (de quem não tem costume com um leitor de tela) como o teclado, a inspeção de código e os elementos da página. 
+
+> 🚨 A maioria dos desenvolvedores não tem experiência com leitores de tela, e tentar usá-los sem conhecer o básico pode ser **frustrante**.
+
+Este tutorial é um guia inicial para qo desenvolvedor que nunca utilizou ou não tem costume com um leitor de tela.
+
+Mas não deixe que a falta de familiaridade seja um obstáculo! Comece aos poucos, pratique e você verá como seus testes se tornarão cada vez mais eficazes. Lembre-se: **usuários de leitores de tela são uma parte importante do seu público**.
+
+Embora existam diversos leitores de tela, **cada um com seus próprios comandos**, este guia te dará uma base para testar os pontos essenciais e garantir um bom nível de acessibilidade, independentemente do leitor que você escolher usar no futuro. Para este tutorial prático, vamos focar no **NVDA**, um leitor de tela gratuito e muito utilizado no sistema operacional Windows.
+
+**Outros Leitores de Tela para Explorar:**
+
+* [Leitores de tela recomendados pelo A11Y Project](https://www.a11yproject.com/resources/#screen-readers)
+* [Leitores de tela recomendados pela Universidade Deque](https://dequeuniversity.com/screenreaders/)
+
+> ⚠️ **Importante!**
+> Embora alguns leitores de tela possam oferecer alguma forma limitada de interação com o mouse, a experiência principal e mais eficiente para usuários cegos é através dos **comandos de teclado**. Eles memorizam atalhos para navegar por títulos, links, formulários e outros elementos da página. Então **neste teste use o leitor de tela em conjunto com suas habilidades de navegação pelo teclado**
+
+**Nosso Teste Rápido com o NVDA (para devs iniciantes na ferramenta):**
+
+Siga estes passos para uma primeira verificação com o NVDA:
+
+1.  **Instale o NVDA:**
+    * Acesse a área de [download do NVDA](https://www.nvaccess.org/download/) pelo site oficial: 
+    * Clique em "Download" e siga as instruções para instalar o programa no seu computador Windows.
+
+![Usuário navegando na página oficial do NVDA, localizando a área de download e clicando no botão "Download".](../../assets/download_nvda.gif)
+
+2.  **Inicie o NVDA:**
+    * Após a instalação, você pode iniciar o NVDA pressionando as teclas `ctrl + alt + n` simultaneamente. Você ouvirá uma voz indicando que o NVDA está em execução.
+
+![Captura de tela da janela "Bem-vindo ao NVDA", um leitor de tela para Windows. A janela contém uma mensagem de boas-vindas explicando como usar o NVDA, mencionando o uso das teclas Insert ou CapsLock como modificadoras. Abaixo da explicação, há uma seção de "Opções" com um menu suspenso para selecionar o esquema de teclado (atualmente "computador de mesa") e três caixas de seleção marcadas: "Usar CapsLock como uma tecla modificadora do NVDA", "Iniciar o NVDA após eu ingressar" e "Mostrar este diálogo ao iniciar o NVDA". No canto inferior direito, há um botão "Ok".](../../assets/bem_vindo_nvda.png)
+
+3.  **Acesse a sua página web:**
+    * Abra o seu navegador (Chrome, Firefox, etc.) e acesse a página web que você deseja testar.
+
+4.  **Peça para o NVDA ler a sua página:**
+     * Com a página aberta no navegador, pressione a tecla **Insert** (ou **Caps Lock**, dependendo da sua configuração do NVDA) + **Seta para baixo** (`caps_lock + ↓`). O NVDA começará a ler o conteúdo da página em ordem.
+
+        Alguns comandos que podem te ajudar:
+
+        | Nome do Comando (Português)        | Tecla (Desktop)         | Descrição                                                                                                                                |
+        | :--------------------------------- | :---------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+        | Iniciar o NVDA         |      Iniciar ou restarta o NVDA    `control+alt+n`               |                                                                                                                                                                                                                                               |
+        | Sair do NVDA                       | `NVDA+q`, `Enter`       | Sai do NVDA.                                                                                                                           |
+        | Pausar ou Reiniciar a Fala         | `shift`                 | Pausa a fala instantaneamente. Se pressionar novamente continuará a fala de onde parou.                                                  |
+        | Parar a Fala                       | `control`               | Para a fala instantaneamente.                                                                                                           
+        | Dizer tudo                         | `NVDA+Seta para baixo`  | Começa a ler da posição atual, movendo-se conforme avança.                                                                             |
+        | Ler linha atual                    | `NVDA+Seta para cima`   | Lê a linha atual. Pressionar duas vezes soletra a linha. Pressionar três vezes soletra a linha usando descrições de caracteres (Alfa, Bravo, Charlie, etc.). |
+        | Ler seleção                        | `NVDA+shift+Seta para cima` | Lê qualquer texto selecionado. Pressionar duas vezes soletra a informação. Pressionar três vezes soletra usando descrição de caracteres. |
+       
+
+5.  **Verifique os seguintes pontos enquanto o NVDA lê a página:**
+
+    - ✅ **Conteúdo Significativo:** Todo o texto importante da página está sendo lido? A ordem em que o conteúdo é lido faz sentido?
+
+    - ✅ **Texto Alternativo para Imagens:** Para cada imagem não textual (ícones, fotos, ilustrações), você ouve uma descrição clara e útil do que a imagem representa? Usuários cegos não podem ver as imagens. O texto alternativo (atributo `alt` na tag `<img>`) fornece uma descrição textual do conteúdo visual.
+
+    - ✅ **Rótulos de Formulário:** Ao navegar pelos campos de formulário (caixas de texto, botões de rádio, checkboxes), você ouve o rótulo (texto que explica o que deve ser preenchido naquele campo) associado a cada um deles?
+
+    - ✅ **Reconhecimento de Elementos:** Quando o NVDA anuncia um elemento na página, ele o identifica corretamente? Por exemplo, um botão é anunciado como "botão", um link como "link", etc.? Se um botão for anunciado apenas como "texto", o usuário pode não saber que pode clicar nele. Use o atributo `role` nas tags HTML se precisar especificar o tipo de um elemento (ex: `<div role="button">`).
+
+    - ✅ **ARIA (Accessible Rich Internet Applications):** Verifique se os atributos ARIA estão sendo usados corretamente. Você ouve informações adicionais sobre o estado ou a função desses elementos?
+
+    - ✅ **Mensagens de Erro:** As mensagens de erro que aparecem são anunciadas pelo NVDA de forma clara e fácil de entender?
+
+    - ✅ **Links de Pular Conteúdo:** No início da página, logo após o carregamento, você consegue encontrar e acionar um link que permite "pular para o conteúdo principal" ou algo similar? Esse tipo de link permite que usuários de leitores de tela ignorem blocos de navegação repetitivos (como menus) e acessem diretamente o conteúdo principal da página, economizando tempo e esforço.
+
+    - ✅ **Datas e Horários:** Se a sua página exibe datas ou unidades de tempo, o NVDA consegue ler essas informações de forma compreensível? Utilize as tags `<time>` ou `<date>` do HTML para marcar essas informações semanticamente.
+
+    - ✅ **Outros Idiomas:** Se a sua página contém palavras ou trechos de texto em outros idiomas (como inglês), o NVDA está lendo essas partes na pronúncia correta? Use o atributo `lang` na tag HTML correspondente (ex: `<span lang="en">Hello</span>`).
+
+
+Lembre-se que este é um teste inicial e simples. À medida que você se sentir mais confortável com o NVDA ou outro Leitor de Tela, poderá explorar seus recursos mais avançados e realizar testes mais aprofundados. O importante é começar e incluir a perspectiva dos usuários de leitores de tela no seu processo de desenvolvimento.
 
 ---
 
