@@ -61,6 +61,8 @@ Após testar a navegação simulando um usuário padrão, garanta que os seguint
 - ✅ **Indicador de Foco:** Um indicador de foco claro e visível aparece em cada elemento interativo quando ele recebe o foco do teclado.
 - ✅ **Armadilhas de Teclado:** NÃO há "armadilhas de teclado" onde o foco fica preso em um elemento e não pode ser movido para fora usando o teclado.
 
+<hr>
+
 ## Inspeção Visual
 
 > 📌 Em projetos pessoais ou autônomos temos maior liberdade de atuar na correção de problemas de layout. No entanto, em equipes onde decisões de layout não são de sua responsabilidade, comunique o problema à pessoa apropriada. Mesmo que a solução não seja imediata, é importante que o problema seja registrado pela equipe ou empresa.
@@ -160,7 +162,6 @@ _Fonte: [W3C | Resize text](https://www.w3.org/WAI/test-evaluate/preliminary/#re
 - ✅ **Contraste:** Certifique-se de que o contraste de cores dos ícones seja suficiente para que sejam facilmente visíveis.
 
 ---
-
 ## Compatibilidade com Leitores de Tela
 
 **Documentações de Apoio:**
@@ -169,11 +170,11 @@ _Fonte: [W3C | Resize text](https://www.w3.org/WAI/test-evaluate/preliminary/#re
 * [WebAIM | Using NVDA to Evaluate Web Accessibility](https://webaim.org/articles/nvda/)
 * [NVDA 2024.4.2 User Guide](https://download.nvaccess.org/documentation/userGuide.html)
 
-Chegamos à etapa final, mas não menos importante: **testar a compatibilidade da sua página com leitores de tela**. Sabemos que essa etapa pode parecer diferente das outras, que envolvem ferramentas mais comuns no dia a dia do desenvolvimento (de quem não tem costume com um leitor de tela) como o teclado, a inspeção de código e os elementos da página. 
+Chegamos à etapa final, mas não menos importante: **testar a compatibilidade da sua página com leitores de tela**. Sabemos que essa etapa pode parecer diferente das outras, que envolvem ferramentas mais comuns no dia a dia do desenvolvimento (para quem não tem costume com um leitor de tela), como o teclado, a inspeção de código e os elementos da página.
 
 > 🚨 A maioria dos desenvolvedores não tem experiência com leitores de tela, e tentar usá-los sem conhecer o básico pode ser **frustrante**.
 
-Este tutorial é um guia inicial para qo desenvolvedor que nunca utilizou ou não tem costume com um leitor de tela.
+Este tutorial é um guia inicial para o desenvolvedor que nunca utilizou ou não tem costume com um leitor de tela.
 
 Mas não deixe que a falta de familiaridade seja um obstáculo! Comece aos poucos, pratique e você verá como seus testes se tornarão cada vez mais eficazes. Lembre-se: **usuários de leitores de tela são uma parte importante do seu público**.
 
@@ -185,20 +186,20 @@ Embora existam diversos leitores de tela, **cada um com seus próprios comandos*
 * [Leitores de tela recomendados pela Universidade Deque](https://dequeuniversity.com/screenreaders/)
 
 > ⚠️ **Importante!**
-> Embora alguns leitores de tela possam oferecer alguma forma limitada de interação com o mouse, a experiência principal e mais eficiente para usuários cegos é através dos **comandos de teclado**. Eles memorizam atalhos para navegar por títulos, links, formulários e outros elementos da página. Então **neste teste use o leitor de tela em conjunto com suas habilidades de navegação pelo teclado**
+> Embora alguns leitores de tela possam oferecer alguma forma limitada de interação com o mouse, a experiência principal e mais eficiente para usuários cegos é através dos **comandos de teclado**. Eles memorizam atalhos para navegar por títulos, links, formulários e outros elementos da página. Então, **neste teste use o leitor de tela em conjunto com suas habilidades de navegação pelo teclado**.
 
 **Nosso Teste Rápido com o NVDA (para devs iniciantes na ferramenta):**
 
 Siga estes passos para uma primeira verificação com o NVDA:
 
 1.  **Instale o NVDA:**
-    * Acesse a área de [download do NVDA](https://www.nvaccess.org/download/) pelo site oficial: 
+    * Acesse a área de [download do NVDA](https://www.nvaccess.org/download/) pelo site oficial.
     * Clique em "Download" e siga as instruções para instalar o programa no seu computador Windows.
 
 ![Usuário navegando na página oficial do NVDA, localizando a área de download e clicando no botão "Download".](../../assets/download_nvda.gif)
 
 2.  **Inicie o NVDA:**
-    * Após a instalação, você pode iniciar o NVDA pressionando as teclas `ctrl + alt + n` simultaneamente. Você ouvirá uma voz indicando que o NVDA está em execução.
+    * Após a instalação, você pode iniciar o NVDA pressionando as teclas `Ctrl + Alt + N` simultaneamente. Você ouvirá uma voz indicando que o NVDA está em execução.
 
 ![Captura de tela da janela "Bem-vindo ao NVDA", um leitor de tela para Windows. A janela contém uma mensagem de boas-vindas explicando como usar o NVDA, mencionando o uso das teclas Insert ou CapsLock como modificadoras. Abaixo da explicação, há uma seção de "Opções" com um menu suspenso para selecionar o esquema de teclado (atualmente "computador de mesa") e três caixas de seleção marcadas: "Usar CapsLock como uma tecla modificadora do NVDA", "Iniciar o NVDA após eu ingressar" e "Mostrar este diálogo ao iniciar o NVDA". No canto inferior direito, há um botão "Ok".](../../assets/bem_vindo_nvda.png)
 
@@ -206,20 +207,19 @@ Siga estes passos para uma primeira verificação com o NVDA:
     * Abra o seu navegador (Chrome, Firefox, etc.) e acesse a página web que você deseja testar.
 
 4.  **Peça para o NVDA ler a sua página:**
-     * Com a página aberta no navegador, pressione a tecla **Insert** (ou **Caps Lock**, dependendo da sua configuração do NVDA) + **Seta para baixo** (`caps_lock + ↓`). O NVDA começará a ler o conteúdo da página em ordem.
+     * Com a página aberta no navegador, pressione a tecla **Insert** (ou **Caps Lock**, dependendo da sua configuração do NVDA) + **Seta para baixo** (`Caps Lock + ↓`). O NVDA começará a ler o conteúdo da página em ordem.
 
         Alguns comandos que podem te ajudar:
 
         | Nome do Comando (Português)        | Tecla (Desktop)         | Descrição                                                                                                                                |
         | :--------------------------------- | :---------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
-        | Iniciar o NVDA         |      Iniciar ou restarta o NVDA    `control+alt+n`               |                                                                                                                                                                                                                                               |
-        | Sair do NVDA                       | `NVDA+q`, `Enter`       | Sai do NVDA.                                                                                                                           |
-        | Pausar ou Reiniciar a Fala         | `shift`                 | Pausa a fala instantaneamente. Se pressionar novamente continuará a fala de onde parou.                                                  |
-        | Parar a Fala                       | `control`               | Para a fala instantaneamente.                                                                                                           
-        | Dizer tudo                         | `NVDA+Seta para baixo`  | Começa a ler da posição atual, movendo-se conforme avança.                                                                             |
-        | Ler linha atual                    | `NVDA+Seta para cima`   | Lê a linha atual. Pressionar duas vezes soletra a linha. Pressionar três vezes soletra a linha usando descrições de caracteres (Alfa, Bravo, Charlie, etc.). |
-        | Ler seleção                        | `NVDA+shift+Seta para cima` | Lê qualquer texto selecionado. Pressionar duas vezes soletra a informação. Pressionar três vezes soletra usando descrição de caracteres. |
-       
+        | Iniciar o NVDA                     | `Ctrl + Alt + N`        | Inicia ou reinicia o NVDA.                                                                                                              |
+        | Sair do NVDA                       | `NVDA + Q`, `Enter`     | Sai do NVDA.                                                                                                                           |
+        | Pausar ou Reiniciar a Fala         | `Shift`                 | Pausa a fala instantaneamente. Se pressionar novamente, continuará a fala de onde parou.                                               |
+        | Parar a Fala                       | `Ctrl`                  | Para a fala instantaneamente.                                                                                                           |
+        | Dizer tudo                         | `NVDA + Seta para baixo`| Começa a ler da posição atual, movendo-se conforme avança.                                                                              |
+        | Ler linha atual                    | `NVDA + Seta para cima` | Lê a linha atual. Pressionar duas vezes soletra a linha. Pressionar três vezes soletra a linha usando descrições de caracteres (Alfa, Bravo, Charlie, etc.). |
+        | Ler seleção                        | `NVDA + Shift + Seta para cima` | Lê qualquer texto selecionado. Pressionar duas vezes soletra a informação. Pressionar três vezes soletra usando descrição de caracteres. |
 
 5.  **Verifique os seguintes pontos enquanto o NVDA lê a página:**
 
@@ -241,12 +241,13 @@ Siga estes passos para uma primeira verificação com o NVDA:
 
     - ✅ **Outros Idiomas:** Se a sua página contém palavras ou trechos de texto em outros idiomas (como inglês), o NVDA está lendo essas partes na pronúncia correta? Use o atributo `lang` na tag HTML correspondente (ex: `<span lang="en">Hello</span>`).
 
-
-Lembre-se que este é um teste inicial e simples. À medida que você se sentir mais confortável com o NVDA ou outro Leitor de Tela, poderá explorar seus recursos mais avançados e realizar testes mais aprofundados. O importante é começar e incluir a perspectiva dos usuários de leitores de tela no seu processo de desenvolvimento.
+Lembre-se de que este é um teste inicial e simples. À medida que você se sentir mais confortável com o NVDA ou outro leitor de tela, poderá explorar seus recursos mais avançados e realizar testes mais aprofundados. O importante é começar e incluir a perspectiva dos usuários de leitores de tela no seu processo de desenvolvimento.
 
 ---
 
-Parabéns por ter chegado até o fim deste tutorial. Estes testes manuais são projetados para serem **simples e rápidos**, permitindo que você, como **desenvolvedor**, faça uma verificação inicial antes de cada entrega. 
+🎉 **Parabéns por ter chegado até o fim deste tutorial!** 🎉
+
+ Estes testes manuais são projetados para serem **simples e rápidos**, permitindo que você, como **desenvolvedor**, faça uma verificação inicial antes de cada entrega. 
 
 Embora existam outros aspectos importantes da acessibilidade, os testes mencionados aqui visam garantir um nível mínimo de acessibilidade. **Além disso, eles oferecem a oportunidade de você se colocar no lugar do usuário, complementando a avaliação de ferramentas automatizadas com sua própria experiência e percepção.**
 
@@ -257,3 +258,5 @@ Caso este tutorial tenha te ajudado de alguma forma, **nos ajude a melhorar este
 ### Material de apoio e Referência
 
 - [W3C | Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/)
+- [Extensões recomendadas pelo A11Y Project](https://www.a11yproject.com/resources/#browser-extensions) que podem ser utilizadas para complementar seus testes.
+- [WebAIM Articles](https://webaim.org/articles/) - Muitos dos artigos envolvem como testar alguma questão de acessibilidade na web.
