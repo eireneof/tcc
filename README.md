@@ -1,4 +1,4 @@
-# 🚀 Guia de Integração de Acessibilidade Web para Equipes de Desenvolvimento: Construindo a Web para Todos ✨
+﻿# 🚀 Guia de Integração de Acessibilidade Web para Equipes de Desenvolvimento: Construindo a Web para Todos ✨
 
 **Olá, Pessoa Desenvolvedora!** (ou interessada em desenvolvimento) 👋 
 
@@ -15,6 +15,7 @@ Integrar a acessibilidade em **em etapas fundamentais** do desenvolvimento web (
 *   **👩‍💻 Desenvolvimento:** Utilizar Linters para identificar questões de acessibilidade no código.
 *   **⚙️ Execução:** Empregar ferramentas de navegador e DevTools para testes visuais e práticos.
 *   **🫂 Testes Manuais:**  Simular a experiência de usuários com diversas necessidades para complementar os testes automatizados.
+*   **📜 Conformidades Legais:** Como utilizar a ABNT NBR 17225 a nosso favor  
 *   **✅ Pull Requests:** Implementar um Checklist para garantir a acessibilidade em cada entrega de código.
 *   **📦 Publicação:** Automatizar verificações de acessibilidade no pipeline de CI/CD para entregas contínuas e acessíveis.
 
@@ -22,6 +23,15 @@ Integrar a acessibilidade em **em etapas fundamentais** do desenvolvimento web (
 ![Fluxograma do guia](./assets/fluxograma.png)
 
 Este Guia surgiu a partir de um estudo sobre acessibilidade web em ambientes educacionais, que mostrou que muitos problemas só são identificados após a produção, principalmente por ferramentas automatizadas. O objetivo do Guia é integrar essas ferramentas na etapa de desenvolvimento, ajudando os desenvolvedores a reduzir erros antes da fase de testes com usuários e especialistas. Assim, questões mais complexas de acessibilidade podem ser analisadas com mais atenção nessa etapa.
+
+## Documentação
+
+[Proposta mais detalhada](./docs/1.0.Introducao.md) com o objetivo de abranger de interessados em desenvolvimento a programadores mais experientes
+
+## Quem está por trás deste Guia? 🤓
+
+*   **Eirene Fireman:** Desenvolvedora Web, graduanda em Ciência da Computação pela UFAL e entusiasta em acessibilidade web. [LinkedIn](https://www.google.com/url?sa=E&source=gmail&q=LINK-DO-LINKEDIN-DA-EIRENE) | [GitHub](https://www.google.com/url?sa=E&source=gmail&q=LINK-DO-GITHUB-DA-EIRENE) | [Email](https://www.google.com/url?sa=E&source=gmail&q=EMAIL-DA-EIRENE)
+*   **Professor Fábio Coutinho:** Docente da UFAL e orientador do projeto. [Currículo Lattes](https://www.google.com/url?sa=E&source=gmail&q=LINK-DO-LATTES-DO-FABIO)
 
 ## Seu feedback é muito importante para nós!
 
@@ -33,25 +43,6 @@ Agradecemos se puder responder ao formulário e compartilhar sua perspectiva sob
 *   Relevância e utilidade das ferramentas e técnicas propostas 💡
 *   Sugestões de melhorias e aprimoramentos 🔧
 *   Novas ideias e contribuições 🎁
-
-## Documentação
-
-Você pode optar por dois caminhos:
-
-<!-- TODO: colocar link para a proposta simplificada -->
-### [Proposta simplificada]() 
-Indicada para devs que já tenham experiência com WCAG, Linters, uso de Extensões e Devtools para auditar páginas web, Configurações esteira para CI/CD ou que simplesmente queiram ter uma visão mais objetiva desta proposta
-
-<!-- TODO: colocar link para a proposta completa --> 
-### [Documentação Completa](./docs/1.Inicie_aqui.md)
-Proposta mais detalhada com o objetivo de abranger de interessados em desenvolvimento a programadores mais experientes
-
-<!-- TODO: colocar índice --> 
-
-## Quem está por trás deste Guia? 🤓
-
-*   **Eirene Fireman:** Desenvolvedora Web, graduanda em Ciência da Computação pela UFAL e entusiasta em acessibilidade web. [LinkedIn](https://www.google.com/url?sa=E&source=gmail&q=LINK-DO-LINKEDIN-DA-EIRENE) | [GitHub](https://www.google.com/url?sa=E&source=gmail&q=LINK-DO-GITHUB-DA-EIRENE) | [Email](https://www.google.com/url?sa=E&source=gmail&q=EMAIL-DA-EIRENE)
-*   **Professor Fábio Coutinho:** Docente da UFAL e orientador do projeto. [Currículo Lattes](https://www.google.com/url?sa=E&source=gmail&q=LINK-DO-LATTES-DO-FABIO)
 
 ---
 
