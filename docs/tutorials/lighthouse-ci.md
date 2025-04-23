@@ -111,7 +111,7 @@ Caso este tutorial tenha te ajudado de alguma forma, **nos ajude a melhorar este
 
 ---
 
-### Referências e Material de Apoio
+### Material de Apoio e Referências
 
 - [Medium | Google Lighthouse: do DevTools ao CI/CD](https://andrewrosario.medium.com/google-lighthouse-do-devtools-ao-ci-cd-67b00112cbda)
 - [GitHub | GoogleChrome/lighthouse-ci](https://github.com/GoogleChrome/lighthouse-ci/tree/main)

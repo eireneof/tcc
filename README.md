@@ -19,14 +19,11 @@ Integrar a acessibilidade em **em etapas fundamentais** do desenvolvimento web (
 *   **✅ Pull Requests:** Implementar um Checklist para garantir a acessibilidade em cada entrega de código.
 *   **📦 Publicação:** Automatizar verificações de acessibilidade no pipeline de CI/CD para entregas contínuas e acessíveis.
 
-<!-- TODO: refazer a imagem -->
-![Fluxograma do guia](./assets/fluxograma.png)
-
 Este Guia surgiu a partir de um estudo sobre acessibilidade web em ambientes educacionais, que mostrou que muitos problemas só são identificados após a produção, principalmente por ferramentas automatizadas. O objetivo do Guia é integrar essas ferramentas na etapa de desenvolvimento, ajudando os desenvolvedores a reduzir erros antes da fase de testes com usuários e especialistas. Assim, questões mais complexas de acessibilidade podem ser analisadas com mais atenção nessa etapa.
 
 ## Documentação
 
-[Proposta mais detalhada](./docs/1.0.Introducao.md) com o objetivo de abranger de interessados em desenvolvimento a programadores mais experientes
+[🔗 Inicie aqui](./docs/1.0.Introducao.md)
 
 ## Quem está por trás deste Guia? 🤓
 

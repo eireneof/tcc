@@ -257,7 +257,7 @@ Caso este tutorial tenha te ajudado de alguma forma, **nos ajude a melhorar este
 
 ---
 
-### Material de apoio e Referência
+### Material de apoio e Referências
 
 - [W3C | Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/)
 - [Extensões recomendadas pelo A11Y Project](https://www.a11yproject.com/resources/#browser-extensions) que podem ser utilizadas para complementar seus testes.
