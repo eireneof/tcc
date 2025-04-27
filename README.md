@@ -4,24 +4,34 @@
 
 Este é **Guia de Integração de Acessibilidade Web para Equipes de Desenvolvimento**, feito de desenvolvedora para desenvolvedores, uma proposta prática para integrar a acessibilidade no seu cotidiano de desenvolvimento. Este projeto nasceu a partir do meu Trabalho de Conclusão de Curso (TCC) objetivando seu compartilhamento com a comunidade tech, para que eu possa entender o nível de aceitação e aplicabilidade deste Guia. 🌍
 
-🎥 Vídeo demonstrativo:
 
-[![Vídeo demonstrativo da proposta](./assets/capa_video.png)](https://youtu.be/HARqAH7_zv4)
+<!-- TODO: atualizar para o video novo -->
+<!-- 🎥 Vídeo demonstrativo:
+
+[![Vídeo demonstrativo da proposta](./assets/capa_video.png)](https://youtu.be/HARqAH7_zv4) -->
 
 ## Qual o Propósito deste Guia? 🤔
 
-Integrar a acessibilidade em **em etapas fundamentais** do desenvolvimento web (escrita de código, execução, revisão e publicação). Este guia visa ser **simples**, **gratuito** e dispor de **ferramentas que já são conhecidas no dia a dia dos desenvolvedores**. 🚀  Com ele, você terá um guia para:
+**Foco total no desenvolvedor:** Nosso objetivo é dar a você, desenvolvedor(a), a **confiança e as ferramentas necessárias para implementar recursos de acessibilidade web diretamente no seu código**, **mesmo que você ainda não tenha um conhecimento conceitual aprofundado** sobre o tema.
 
-*   **👩‍💻 Desenvolvimento:** Utilizar Linters para identificar questões de acessibilidade no código.
-*   **⚙️ Execução:** Empregar ferramentas de navegador e DevTools para testes visuais e práticos.
-*   **🫂 Testes Manuais:**  Simular a experiência de usuários com diversas necessidades para complementar os testes automatizados.
-*   **📜 Conformidades Legais:** Como utilizar a ABNT NBR 17225 a nosso favor  
-*   **✅ Pull Requests:** Implementar um Checklist para garantir a acessibilidade em cada entrega de código.
-*   **📦 Publicação:** Automatizar verificações de acessibilidade no pipeline de CI/CD para entregas contínuas e acessíveis.
+Queremos integrar a acessibilidade **em etapas fundamentais** do desenvolvimento web (escrita de código, execução, revisão e publicação). Este guia visa ser **simples**, **gratuito** e dispor de **ferramentas que já são conhecidas no dia a dia dos desenvolvedores**. 🚀
 
-Este Guia surgiu a partir de um estudo sobre acessibilidade web em ambientes educacionais, que mostrou que muitos problemas só são identificados após a produção, principalmente por ferramentas automatizadas. O objetivo do Guia é integrar essas ferramentas na etapa de desenvolvimento, ajudando os desenvolvedores a reduzir erros antes da fase de testes com usuários e especialistas. Assim, questões mais complexas de acessibilidade podem ser analisadas com mais atenção nessa etapa.
+Com ele, você terá um guia prático para:
+
+* **👩‍💻 Desenvolvimento:** Utilizar Linters para identificar questões de acessibilidade no código **enquanto você escreve**.
+* **⚙️ Execução:** Empregar ferramentas de navegador e DevTools para testes visuais e práticos **na sua máquina**.
+* **🫂 Testes Manuais:** Simular a experiência de usuários com diversas necessidades para complementar os testes automatizados **durante o desenvolvimento**.
+* **📜 Conformidades Legais:** Como utilizar a ABNT NBR 17225 a nosso favor **como uma referência prática**.
+* **✅ Pull Requests:** Implementar um Checklist para garantir a acessibilidade em cada entrega de código **antes de integrar**.
+* **📦 Publicação:** Automatizar verificações de acessibilidade no pipeline de CI/CD para entregas contínuas e acessíveis, **garantindo que o que vai para produção já está melhor**.
+
+Este Guia surgiu a partir de um estudo sobre acessibilidade web em ambientes educacionais. Este estudo mostrou que muitos problemas só são identificados **após a produção**, principalmente por ferramentas automatizadas.
+
+**O grande objetivo deste Guia é empoderar o desenvolvedor, integrando essas verificações e ferramentas na sua rotina de desenvolvimento, para que você possa reduzir drasticamente a ocorrência de problemas de acessibilidade ANTES que o código seja publicado.** Assim, quando chegar nessa etapa, os erros encontrados serão mais complexos, envolvendo a opinião de usuários e especialistas, e não os erros básicos que podem ser pegos mais cedo no ciclo de desenvolvimento. **Nosso foco é diminuir os problemas de acessibilidade detectados apenas após a publicação (pós-produção).**
 
 ## Documentação
+
+<!-- TODO: colocar indice aqui -->
 
 [🔗 Inicie aqui](./docs/1.0.Introducao.md)
 
