@@ -16,6 +16,8 @@ Para aproveitar melhor este tutorial, é importante:
 2. **Estar com o documento da norma aberto.**  
     - Você pode consultá-lo diretamente no site da ABNT: [Normas de Acessibilidade da ABNT](https://www.abntcolecao.com.br/mpf/default.aspx?T=9BC37A821F0D).
 
+> **Nota:** O link para o site da ABNT Coleções pode falhar ocasionalmente. Caso isso aconteça, você pode buscar pela norma diretamente no Google, utilizando o termo "ABNT NBR 17225 site:abntcolecao.com.br", para encontrá-la na página oficial de coleções da ABNT.
+
 ![Lista de Normas de Acessibilidade da ABNT exibida no site ABNTColeção, com destaque para a norma ABNT NBR 17225:2025 sobre acessibilidade em conteúdo e aplicações web](../../assets/abnt_colecoes.png)
 
 ## Como o Checklist Funciona? 📝
