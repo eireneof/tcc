@@ -76,7 +76,7 @@ Além do menu, ao analisar uma página, o WAVE injeta ícones e indicadores dire
 **Identificação de recursos de acessibilidade (ARIA):**  
 ![Recursos ARIA identificados pelo WAVE](../../assets/wave_recursos_acessibilidade.png)
 
-## Próximos passos
+## Considerações Finais
 
 🎉 **Parabéns por explorar o poder da extensão WAVE!** 🎉 Espero que este tutorial tenha te dado uma base sólida para começar a identificar e corrigir problemas de acessibilidade em suas páginas web.
 

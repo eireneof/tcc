@@ -60,7 +60,9 @@ Validar com o checklist é um processo sistemático. Siga estes passos:
     - O **Anexo A (Itens Problemáticos para Acessibilidade)** lista coisas comuns na web que costumam dar problema de acessibilidade (como alguns tipos de pop-ups ou carrosséis) e que precisam de atenção redobrada.
     - O **Material de Apoio (Seção 6)** pode indicar ferramentas e recursos úteis.
 
-<hr>
+## Considerações Finais
+
+🎉 **Parabéns por ter chegado até o fim deste tutorial!** 🎉
 
 Ao usar o checklist da ABNT NBR 17225 de forma cuidadosa, você está realizando uma validação técnica importante que para garantir que o seu trabalho está caminhando para conformidade com as leis e normas de acessibilidade do Brasil.
 

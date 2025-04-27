@@ -181,6 +181,10 @@ export default tseslint.config(
         * **`attributes`:** Permite configurar quais propriedades JSX correspondem a atributos HTML. Por exemplo, você pode querer que a propriedade `for` seja verificada além de `htmlFor` em elementos `<label>`.
         * **`polymorphicPropName`:** Permite definir o nome da prop que seu código usa para criar componentes polimórficos. Isso ajuda o plugin a determinar o tipo do elemento para aplicar as regras corretamente. Por exemplo, se você usa uma prop chamada `as` para definir o elemento (ex: `<Box as="h3">`), você pode configurar isso para que o plugin avalie o `<Box>` como um `h3`.
 
+## Considerações Finais
+
+🎉 **Parabéns por ter chegado até o fim deste tutorial!** 🎉
+
 Ao seguir estes passos, você terá configurado com sucesso o `eslint-plugin-jsx-a11y` no seu projeto React utilizando `eslint.config.js`, garantindo que seu código JSX seja analisado em busca de problemas de acessibilidade. Consulte a documentação completa para explorar todas as configurações e regras disponíveis.
 
 Caso este tutorial tenha te ajudado de alguma forma, **nos ajude a melhorar este projeto respondendo nosso [formulário de feedback](https://forms.gle/U75FJSutNxZ2bwWG7). 😄**

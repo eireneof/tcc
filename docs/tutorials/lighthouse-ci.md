@@ -97,7 +97,7 @@ Este é um tutorial relativamente simples. O objetivo é: **Se o código atingir
 
 ![Validação de PR](../../assets/gif_check_pr.gif)
 
-## Considerações Importantes ⚠️
+## Considerações Finais
 
 Este guia oferece uma **introdução** simplificada à integração do Lighthouse CI com o GitHub Actions para monitorar a acessibilidade do seu projeto. O Lighthouse oferece uma vasta gama de configurações para acessibilidade, como a geração de relatórios e log de erros, mas também vai além da acessibilidade e analisa questões de boas práticas, SEO e performance.
 

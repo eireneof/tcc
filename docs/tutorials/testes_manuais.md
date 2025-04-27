@@ -245,7 +245,7 @@ Siga estes passos para uma primeira verificação com o NVDA:
 
 Lembre-se de que este é um teste inicial e simples. À medida que você se sentir mais confortável com o NVDA ou outro leitor de tela, poderá explorar seus recursos mais avançados e realizar testes mais aprofundados. O importante é começar e incluir a perspectiva dos usuários de leitores de tela no seu processo de desenvolvimento.
 
----
+## Considerações Finais
 
 🎉 **Parabéns por ter chegado até o fim deste tutorial!** 🎉
 
@@ -257,7 +257,7 @@ Caso este tutorial tenha te ajudado de alguma forma, **nos ajude a melhorar este
 
 ---
 
-### Material de apoio e Referências
+### Material de Apoio e Referências
 
 - [W3C | Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/)
 - [Extensões recomendadas pelo A11Y Project](https://www.a11yproject.com/resources/#browser-extensions) que podem ser utilizadas para complementar seus testes.

@@ -196,6 +196,10 @@ Esse acompanhamento do elemento atual em foco é interessante para:
 - Garantir que a ordem em que os elementos recebem foco ao pressionar a tecla **Tab** segue um fluxo lógico e intuitivo dentro da página.  
 - Validar se o elemento em foco será destacado visualmente (por meio do anel de foco).  
 
+## Considerações Finais
+
+🎉 **Parabéns por ter chegado até o fim deste tutorial!** 🎉
+
 Ao finalizar este tutorial, você terá adquirido o conhecimento fundamental para utilizar o Chrome DevTools como uma ferramenta poderosa na verificação da acessibilidade do seu site. Você será capaz de:  
 - Gerar relatórios detalhados  
 - Analisar a estrutura de acessibilidade  

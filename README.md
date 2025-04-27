@@ -46,7 +46,7 @@ Este Guia surgiu a partir de um estudo sobre acessibilidade web em ambientes edu
 
 Agradecemos se puder responder ao formulário e compartilhar sua perspectiva sobre:
 
-*   Aplicabilidade do Framework no seu dia a dia 👍 ou 👎
+*   Aplicabilidade do Guia no seu dia a dia 👍 ou 👎
 *   Relevância e utilidade das ferramentas e técnicas propostas 💡
 *   Sugestões de melhorias e aprimoramentos 🔧
 *   Novas ideias e contribuições 🎁
