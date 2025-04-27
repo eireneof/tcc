@@ -1,8 +1,8 @@
-﻿# 🚀 Guia de Integração de Acessibilidade Web para Equipes de Desenvolvimento: Construindo a Web para Todos ✨
+﻿# 🚀 Guia de Integração de Acessibilidade Web para Desenvolvedores: Construindo a Web para Todos ✨
 
 **Olá, Pessoa Desenvolvedora!** (ou interessada em desenvolvimento) 👋 
 
-Este é **Guia de Integração de Acessibilidade Web para Equipes de Desenvolvimento**, feito de desenvolvedora para desenvolvedores, uma proposta prática para integrar a acessibilidade no seu cotidiano de desenvolvimento. Este projeto nasceu a partir do meu Trabalho de Conclusão de Curso (TCC) objetivando seu compartilhamento com a comunidade tech, para que eu possa entender o nível de aceitação e aplicabilidade deste Guia. 🌍
+Este é **Guia de Integração de Acessibilidade Web para Desenvolvedores**, feito de dev para dev, uma proposta prática para integrar a acessibilidade no seu cotidiano de desenvolvimento. Este projeto nasceu a partir do meu Trabalho de Conclusão de Curso (TCC) objetivando seu compartilhamento com a comunidade tech, para que eu possa entender o nível de aceitação e aplicabilidade deste Guia. 🌍
 
 
 <!-- TODO: atualizar para o video novo -->
@@ -31,9 +31,27 @@ Este Guia surgiu a partir de um estudo sobre acessibilidade web em ambientes edu
 
 ## Documentação
 
-<!-- TODO: colocar indice aqui -->
+  - [1.0. Introdução](./docs/1.0.Introducao.md)
+  - [2.0. Motivação](./docs/2.0.Motivacao.md)
+  - [3.0. Proposta](./docs/3.0.Proposta.md)
+      - [3.1. Linters](./docs/3.1.Linters.md)
+      - [3.2. Extensões](./docs/3.2.Extensoes.md)
+      - [3.3. DevTools](./docs/3.3.DevTools.md)
+      - [3.4. Testes Manuais](./docs/3.4.Testes_manuais.md)
+      - [3.5. Conformidades Legais](./docs/3.5.Conformidades_legais.md)
+      - [3.6. Template de Pull Request](./docs/3.6.Checklists.md)
+      - [3.7. CI/CD](./docs/3.7.CI_CD.md)
+  - [4.0. Espaço para Feedback](./docs/4.0.Espaco_Feedback.md)
+  - [5.0. Quem Somos](./docs/5.0.Quem_somos.md)
 
-[🔗 Inicie aqui](./docs/1.0.Introducao.md)
+## Tutoriais
+
+  - [Linter - ESLint Plugin JSX A11y](./docs/tutorials/eslint-plugin-jsx-a11y.md)
+  - [Extensão - WAVE](./docs/tutorials/Wave.md)
+  - [DevTools - Chrome DevTools](./docs/tutorials/devtools.md)
+  - [Testes Manuais](./docs/tutorials/testes_manuais.md)
+  - [Conformidades Legais - ABNT NBR 17225](./docs/tutorials/ABNT_NBR_17225.md)
+  - [CI/CD - Lighthouse CI](./docs/tutorials/lighthouse-ci.md)
 
 ## Quem está por trás deste Guia? 🤓
 
@@ -54,3 +72,9 @@ Agradecemos se puder responder ao formulário e compartilhar sua perspectiva sob
 ---
 
 **Vamos construir juntos uma web mais acessível e inclusiva! 💪**
+
+## Quer Contribuir? ✨
+
+Sua ajuda é essencial para enriquecer este Guia! Se você tem sugestões, encontrou algum erro ou quer adicionar novos conteúdos, ficaremos felizes em receber sua contribuição.
+
+Por favor, consulte nosso **[Guia de Contribuição](CONTRIBUTING.md)** para saber como participar. Sua experiência faz a diferença!
